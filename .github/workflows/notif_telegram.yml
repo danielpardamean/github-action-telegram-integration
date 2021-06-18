@@ -24,5 +24,4 @@ jobs:
           format: markdown
           message: |
             Issue ${{ github.event.issue.title }} dibuat oleh ${{ github.actor }}.
-            ${{ github.event.issue.html_url }}
-            [Google](https://www.google.com)
+            [Lihat](${{ github.event.issue.html_url }})

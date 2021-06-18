@@ -23,6 +23,6 @@ jobs:
           token: ${{ secrets.TELEGRAM_TOKEN }}
           format: markdown
           message: |
-            Issue ${{ github.event.issue }} dibuat oleh ${{ github.actor }}.
-            ${{ github.repository.issues_url }}
+            Issue ${{ github.event.issue.title }} dibuat oleh ${{ github.actor }}.
+            ${{ github.event.issue.url }}
             [Google](https://www.google.com)

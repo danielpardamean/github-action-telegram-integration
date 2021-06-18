@@ -23,6 +23,5 @@ jobs:
           token: ${{ secrets.TELEGRAM_TOKEN }}
           format: markdown
           message: |
-            The ${{ github.event_name }} event triggered final step.
-            echo This event is a pull request that had an assignee removed.
+            Issue ${{ github.event.issue }} dibuat.
             [Google](https://www.google.com)

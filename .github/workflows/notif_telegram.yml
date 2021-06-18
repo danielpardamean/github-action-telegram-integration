@@ -24,6 +24,5 @@ jobs:
           format: markdown
           message: |
             Issue ${{ github.event.issue.title }} dibuat oleh ${{ github.actor }}.
-            ${{ github.event.issue.url }}
+            ${{ github.event.issue.html_url }}
             [Google](https://www.google.com)
-            ${{ github.event_name }} commit in ${{ github.repository }} by "${{ github.actor }}". [${{github.sha}}@${{ github.ref }}]
